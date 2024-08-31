@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 Second Page</title>
+    <style>
+        body{
+        margin: 0 auto;
+        display: grid;
+        place-items: center;
+        }
+        h2{
+            color: #800080;;
+        }
+        form{
+        max-width: 600px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+        }
+        .button:hover{
+            background-color: #800080;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sign Up</h2>
+    <form action="#">
+        <input type="reset" id="reset" class="button" value="Reset"><br><br>
+        <label>First Name</label><br>
+        <input type="text" id="fname" placeholder="John" name="fname" required><br>
+        <label>Last Name</label><br>
+        <input type="text" id="lname" placeholder="Doe" name="lname" required><br>
+        <label for="dropdown">Gender</label><br>
+        <select id="dropdown" name="dropdown" required>
+            <option value="">Select gender</option>
+            <option value="option1">Male</option>
+            <option value="option2">Female</option>
+            <option value="option3">Rather not say</option>
+        </select><br>
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br>
+        <label for="email">Enter your email:</label><br>
+        <input type="email" id="email" placeholder="name22@example.com" name="email" required><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required><br>
+        <label for="country">Country:</label><br>
+        <select id="country" name="country" required>
+          <option value="">Select a country</option>
+          <option value="NG">Nigeria</option>
+          <option value="RW">Rwanda</option>
+          <option value="GH">Ghana</option>
+          <option value="KE">Kenya</option>
+          <option value="US">United States</option>
+          <option value="CA">Canada</option>
+          <option value="GB">United Kingdom</option>
+          <option value="AU">Australia</option>
+          <!-- Add more country options as needed -->
+        </select><br>
+        <label>State/City of Residence</label><br>
+        <input type="text" id="cname" placeholder="State/City Name" name="cname" required><br>
+        <label for="referral">How did you hear about us?</label><br>
+        <select id="ref" name="referral" required>
+            <option value="blank"></option>
+            <option value="FR">Friend</option>
+            <option value="TW">Twitter</option>
+            <option value="FB">Facebook</option>
+            <option value="YT">YouTube</option>
+            <option value="LI">LinkedIn</option>
+            <option value="IN">Instagram</option>
+            <option value="BB">Billboard</option>
+            <option value="SO">Sales Officer</option>
+            <option value="OT">Other</option>
+          </select><br>
+          <label for="pwd">Password:</label><br>
+          <input type="password" id="pwd" placeholder="Enter a secure password" name="pwd" required><br>
+          <label for="pwd">Confirm Password:</label><br>
+          <input type="password" id="cpwd" placeholder="Confirm your password" name="cpwd" required><br><br>
+    
+          <button class="button" type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

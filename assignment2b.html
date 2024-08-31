@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 Second Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background: linear-gradient(to bottom right, #ffafbd, #ffc3a0, #4e54c8, #8f94fb);
+            margin: 0 auto;
+            display: grid;
+            place-items: center;
+        }
+        p{
+            font-family: "Lexend Deca", sans-serif;
+       
+        }
+        .responsive-video{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: auto;
+        }
+
+        @media (max-width: 600px) {
+            img {
+                width: 50%;
+            }
+        }
+
+
+        @media (min-width: 601px) and (max-width: 900px) {
+            img {
+                width: 80%; /* Slightly smaller for tablets */
+            }
+        }
+
+        /* Styles for desktops */
+        @media (min-width: 901px) {
+            img {
+                width: 60%; /* Smaller width for desktops */
+            }
+        }
+    </style>
+</head>
+<body>
+    <img id="image" alt="A Picture of Jeffrey Onemu" src="img.webp"><br>
+    <p>Hi, I'm Jeffrey. This is a little page all about me.</p>
+    <p>First, let's set the mood with one of my favourite songs</p>
+    <audio controls>
+        <source src="dull.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+    <p>
+        A random fact about me is that I love knowing random facts.<br>
+    For example, did you know that parrots experience something called <b>Neophobia</b>.<br>
+    That is, when presented with a new object they may begin to panic.
+    </p>
+    <video class="responsive-video" controls>
+        <source src="parrot.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <figcaption><i>Me seeing everything I had to learn this semester</i></figcaption>
+    
+</body>
+</html>

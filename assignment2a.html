@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 First Page</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #000;
+}
+
+td {
+    vertical-align: middle;
+}
+
+tr:hover td:not(:first-child) {
+    background-color: #800080; 
+    color: #ffffff;
+}
+
+td[rowspan] {
+    vertical-align: middle;
+}
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Schools</th>
+                <th>School of Engineering</th>
+                <th>School of Product</th>
+                <th>School of Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>Courses</b></td>
+                <td>Frontend Engineering</td>
+                <td>Product Design</td>
+                <td>Data Analysis</td>
+            </tr>
+            <tr>
+                <td rowspan="1"></td>
+                <td>Backend Engineering</td>
+                <td>Product Marketing</td>
+                <td>Data Science</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Cloud Engineering</td>
+                <td>Product Management</td>
+                <td>Data Engineering</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Cybersecurity</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
